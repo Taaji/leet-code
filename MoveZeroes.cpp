@@ -6,7 +6,7 @@ public:
     		if(nums[i] == 0){
     			nums.erase(nums.begin() + i);
     			count_deleted++;
-    			i = i-1;
+    			i = i-1; //important to reset position after deleting a 0 from vector. check test case [0, 0, 1].
     		}
     		else
     			continue;
